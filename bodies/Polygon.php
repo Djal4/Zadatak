@@ -1,7 +1,9 @@
 <?php
 
 namespace bodies;
-class Polygon implements \bodies\Body
+
+use \bodies\Body;
+class Polygon implements Body
 {
     private float $volume=0,$surface=0;
     function __construct($h,...$params)

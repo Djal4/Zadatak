@@ -1,7 +1,9 @@
 <?php
 
 namespace bodies;
-class Triangle implements \bodies\Body
+
+use \bodies\Body;
+class Triangle implements Body
 {
     private float $a=0,$b=0,$c=0,$s=0;
     function __construct($a,$b,$c)

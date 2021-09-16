@@ -2,7 +2,8 @@
 
 namespace bodies;
 
-class Rectangle implements \bodies\Body
+use \bodies\Body;
+class Rectangle implements Body
 {
     private float $a=0,$b=0;
     function __construct($A,$B)

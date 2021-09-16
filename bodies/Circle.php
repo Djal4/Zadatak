@@ -2,9 +2,8 @@
 
 namespace bodies;
 
-//require_once("includer.php");
-
-class Circle implements \bodies\Body
+use \bodies\Body;
+class Circle implements Body
 {
     private CONST PI=3.14;
     private float $r=0;
