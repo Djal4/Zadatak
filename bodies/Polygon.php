@@ -1,11 +1,10 @@
 <?php
 
-namespace tela;
+namespace bodies;
 
-require_once("arh.php");
+require_once("includer.php");
 
-
-class Mnogougao implements \tela\Telo
+class Polygon implements \bodies\Body
 {
     static $obim=0,$povr=0;
     function __construct($h,...$params)
@@ -16,11 +15,11 @@ class Mnogougao implements \tela\Telo
             self::$povr+=$h*$par/2;
         }
     }
-    public function Obim() : float
+    public function volume() : float
     {
         return self::$obim;
     }
-    public function Povrsina() : float
+    public function surface() : float
     {
         return self::$povr;
     }

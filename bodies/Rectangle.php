@@ -1,10 +1,10 @@
 <?php
 
-namespace tela;
+namespace bodies;
 
-require_once("arh.php");
+require_once("includer.php");
 
-class Pravougaonik implements \tela\Telo
+class Rectangle implements \bodies\Body
 {
     public float $a=0,$b=0;
     function __construct($A,$B)
@@ -12,11 +12,11 @@ class Pravougaonik implements \tela\Telo
         $this->a=$A;
         $this->b=$B;
     }
-    public function Obim() : float
+    public function volume() : float
     {
         return 2*($this->a+$this->b);
     }
-    public function Povrsina() : float
+    public function surface() : float
     {
         return $this->a*$this->b;
     }

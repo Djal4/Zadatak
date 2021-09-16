@@ -1,10 +1,10 @@
 <?php
 
-namespace tela;
+namespace bodies;
 
-require_once("arh.php");
+require_once("includer.php");
 
-class Krug implements \tela\Telo
+class Circle implements \bodies\Body
 {
     CONST PI=3.14;
     public float $r=0;
@@ -12,11 +12,11 @@ class Krug implements \tela\Telo
     {
         $this->r=$r;
     }
-    public function Obim() : float
+    public function volume() : float
     {
         return 2*self::PI*$this->r;
     }
-    public function Povrsina() : float
+    public function surface() : float
     {
         return self::PI*self::PI*$this->r;
     }
