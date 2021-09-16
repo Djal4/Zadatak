@@ -2,12 +2,12 @@
 
 namespace bodies;
 
-require_once("includer.php");
+//require_once("includer.php");
 
 class Circle implements \bodies\Body
 {
-    CONST PI=3.14;
-    public float $r=0;
+    private CONST PI=3.14;
+    private float $r=0;
     function __construct($r)
     {
         $this->r=$r;

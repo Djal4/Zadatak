@@ -2,11 +2,9 @@
 
 namespace bodies;
 
-require_once("includer.php");
-
 class Rectangle implements \bodies\Body
 {
-    public float $a=0,$b=0;
+    private float $a=0,$b=0;
     function __construct($A,$B)
     {
         $this->a=$A;

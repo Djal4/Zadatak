@@ -1,12 +1,9 @@
 <?php
 
 namespace bodies;
-    
-require_once("includer.php");
-
 class Triangle implements \bodies\Body
 {
-    public float $a=0,$b=0,$c=0,$s=0;
+    private float $a=0,$b=0,$c=0,$s=0;
     function __construct($a,$b,$c)
     {
         $this->a=$a;
